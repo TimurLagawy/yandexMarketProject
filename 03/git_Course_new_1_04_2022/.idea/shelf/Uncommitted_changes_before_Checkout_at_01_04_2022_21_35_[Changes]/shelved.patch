@@ -1,0 +1,33 @@
+Index: ../../../git_Course_new_1_04_2022/src/com/metanit/Program.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.metanit;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class Program {\r\n    public static void main(String[] args) {\r\n        /*\r\n        System.out.println(\"Hello Java!\");\r\n        int var1 ;\r\n        int var2 ;\r\n        var1 = 1024 ;\r\n        System.out.println (\"Переменная var1 содержит:\" + var1 ) ;\r\n        var2 = var1 / 2 ;\r\n        System.out.print (\"Переменная var2 содержит:\" +var2);\r\n         *//*\r\n        String name = \"Tom\";\r\n        int age = 31;\r\n        float height = 1.7f;\r\n\r\n        System.out.printf(\"Name: %s Age: %d Height: %.2f \\n\", name,age,height);\r\n        *//*\r\n        Scanner in=new Scanner(System.in);\r\n        System.out.println(\"Input a number: \");\r\n        int num=in.nextInt();\r\n\r\n        System.out.println(\"Your number is  \" +num);\r\n        in.close();\r\n        */Scanner scanner=new Scanner(System.in);\r\n        System.out.println(\"Input a number: \");\r\n        int num=scanner.nextInt();\r\n\r\n        System.out.println(\"Your number is  \" +num);\r\n        scanner.close();\r\n    }\r\n\r\n}
+===================================================================
+diff --git a/../../../git_Course_new_1_04_2022/src/com/metanit/Program.java b/../../../git_Course_new_1_04_2022/src/com/metanit/Program.java
+--- a/../../../git_Course_new_1_04_2022/src/com/metanit/Program.java	
++++ b/../../../git_Course_new_1_04_2022/src/com/metanit/Program.java	
+@@ -25,12 +25,21 @@
+ 
+         System.out.println("Your number is  " +num);
+         in.close();
+-        */Scanner scanner=new Scanner(System.in);
++        *//*Scanner scanner=new Scanner(System.in);
+         System.out.println("Input a number: ");
+         int num=scanner.nextInt();
+ 
+         System.out.println("Your number is  " +num);
+         scanner.close();
+-    }
++        */
+ 
++        Scanner scanner=new Scanner(System.in);
++        System.out.println("Input name: ");
++        String name=scanner.nextLine();
++        System.out.println("Input age: ");
++        int age= scanner.nextInt();
++        System.out.println("Input height: ");
++        float height=scanner.nextFloat();
++        System.out.printf("Name: %s Age: %d Height: %.2f \n", name,age,height);
++    }//при вводе дробного числа использовать запятую!!!
+ }
+\ No newline at end of file
