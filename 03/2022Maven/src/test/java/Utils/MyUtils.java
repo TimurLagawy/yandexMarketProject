@@ -6,19 +6,15 @@ public class MyUtils {
         if (s == null) {
             throw new IllegalArgumentException();
         }
-
         if (s.length() == 1) {
             throw new RuntimeException();
         }
-
         if (s.contains(" ")) {
             throw new IllegalArgumentException();
         }
-
         if (s.isEmpty()) {
             throw new RuntimeException();
         }
-
         char[] letters = s.toCharArray();
         char[] reversedLetters = new char[s.length()];
         for (int i = 0; i < s.length(); i++) {
